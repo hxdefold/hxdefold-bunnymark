@@ -67,7 +67,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: defold
-          path: build/html5
+          path: build/html5/Bunnymark
 
   # Deploy to github pages
   deploy:
