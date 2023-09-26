@@ -51,6 +51,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v3
       - name: Prepare directory
         run: mkdir -p build/html5/
       - name: Prepare directory
