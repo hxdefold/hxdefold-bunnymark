@@ -80,15 +80,14 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: defold
-          path: 'build'
-      - run: tree
+          path: '.'
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload HTML5 build output
-          path: 'build/build/html5'
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
