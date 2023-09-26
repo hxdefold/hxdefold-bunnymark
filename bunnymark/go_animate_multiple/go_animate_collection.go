@@ -1,6 +1,6 @@
 components {
   id: "go_animate_collection"
-  component: "/bunnymark/go_animate_multiple/go_animate_collection.script"
+  component: "/scripts/bunnymark/scripts/GoAnimateCollection.script"
   position {
     x: 0.0
     y: 0.0
@@ -18,6 +18,7 @@ embedded_components {
   type: "factory"
   data: "prototype: \"/bunnymark/bunny.go\"\n"
   "load_dynamically: false\n"
+  "dynamic_prototype: false\n"
   ""
   position {
     x: 0.0

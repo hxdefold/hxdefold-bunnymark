@@ -1,0 +1,12 @@
+local M = {}
+
+function M.on_build_started(opts)
+    return {
+      {
+        action = "shell",
+        command = { "haxe", "build.hxml" }
+      }
+    }
+  end
+
+return M

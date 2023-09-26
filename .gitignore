@@ -1,10 +1,28 @@
-
+# Defold stuff
+/.internal
+/dump
+dmengine_headless.exe
+dmengine_release.exe
+dmengine.exe
+SteamEmu/
 .externalToolBuilders
 .DS_Store
+Thumbs.db
 .lock-wscript
-build
 *.pyc
 .project
 .cproject
 builtins
-.internal
+manifest.private.der
+manifest.public.der
+
+# Generated files
+/scripts
+/assets/gen
+/bit32.lua
+/luv.lua
+/socket.lua
+/main.lua
+
+# Artifacts
+/build

@@ -1,0 +1,39 @@
+###########################################################
+#                project files
+###########################################################
+
+--class-path src
+
+# recursively include all Haxe sources in the source diretory
+--macro include('', true, null, ['src'])
+
+
+###########################################################
+#                hxdefold
+###########################################################
+
+# enable hxdefold Haxe library
+--library hxdefold:git:https://github.com/hxdefold/hxdefold.git#v2
+
+# override to specify another Defold project root directory
+-D hxdefold-projectroot=.
+
+# override to specify another output directory for generated script files (relative to the project root)
+-D hxdefold-scriptdir=scripts
+
+
+###########################################################
+#                output
+###########################################################
+
+# enable full dead code elimination
+-dce full
+
+# enable static optimizations
+-D analyzer-optimize
+
+# where to generate Lua output
+--lua main.lua
+
+# generate some empty files needed by the Defold lua compiler
+# --cmd touch bit32.lua luv.lua socket.lua

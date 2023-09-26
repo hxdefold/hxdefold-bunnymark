@@ -1,6 +1,6 @@
 components {
   id: "bunny_update"
-  component: "/bunnymark/update_many/bunny_update.script"
+  component: "/scripts/bunnymark/scripts/BunnyUpdate.script"
   position {
     x: 0.0
     y: 0.0

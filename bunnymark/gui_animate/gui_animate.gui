@@ -1,4 +1,4 @@
-script: "/bunnymark/gui_animate/gui_animate.gui_script"
+script: "/scripts/bunnymark/scripts/GuiAnimateGui.gui_script"
 textures {
   name: "bunnymark"
   texture: "/assets/bunnymark.atlas"
