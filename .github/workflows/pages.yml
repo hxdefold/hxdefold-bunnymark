@@ -30,7 +30,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Prepare haxelib
-        run: haxelib setup ~/.haxelib
+        run: haxelib setup ~/haxelib
       - name: Install Haxe dependencies
         run: haxelib install --always build.hxml
       - name: Compile Haxe to Lua
