@@ -1,5 +1,6 @@
 package bunnymark.scripts;
 
+import lua.Table;
 import Defold.hash;
 import defold.types.Hash;
 import defold.support.ScriptOnInputAction;
@@ -18,6 +19,11 @@ class GoAnimate extends Script
 
         Bunnymark.start();
         spawn(500);
+
+        Table.fromDynamic({
+            key: 5,
+            name: 'asdf'
+        });
     }
 
     override function final_()
