@@ -26,3 +26,4 @@ manifest.public.der
 
 # Artifacts
 /build
+/.editor_settings

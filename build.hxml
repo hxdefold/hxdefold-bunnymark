@@ -13,7 +13,7 @@
 ###########################################################
 
 # enable hxdefold Haxe library
---library hxdefold:git:https://github.com/hxdefold/hxdefold.git#v2
+--library hxdefold:git:https://github.com/hxdefold/hxdefold.git
 
 # override to specify another Defold project root directory
 -D hxdefold-projectroot=.
@@ -34,6 +34,3 @@
 
 # where to generate Lua output
 --lua main.lua
-
-# generate some empty files needed by the Defold lua compiler
-# --cmd touch bit32.lua luv.lua socket.lua
